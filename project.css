@@ -1,0 +1,344 @@
+body{
+    margin: 0;
+    padding-top: 80px;
+    margin-bottom: 1000px;
+    padding-left: 90px;
+    padding-right: 25px;
+    background-color: rgb(248, 248, 248);
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    right: 0;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    
+}
+.sidebar{
+    background-color: white;
+    color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 70px;
+    width: 72px;
+    z-index: 150;
+    padding-top: 15px;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.youtube-img{
+    height: 70px;
+    width: 90px;
+}
+.menu-img{
+    height: 70px;
+    margin-left: 4px;
+    margin-right: 24px;
+}
+.middle-section{
+    flex: 1;
+    /* background-color: lightcyan; */
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 500px;
+    display: flex;
+   
+    align-items: center;
+}
+.right-section{
+    width: 200px;
+    /* background-color: lightcoral; */
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    
+}
+.my-img{
+    width: 38px;
+}
+.upload{
+    width: 35px;
+    margin-left: 7px;
+}
+.dots{
+    width: 35px;
+}
+.bell{
+    width: 35px;
+}
+.ser{
+    font-size: 16px;
+    /* display: block; */
+    border-radius: 8px;
+    /* width: 280px; */
+    flex: 1;
+
+    /* height: 30px; */
+    border: 1px solid gray;
+    padding: 8px 0 8px 15px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.sidebar-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    flex-direction: column;
+    
+}
+.sidebar-link div{
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.sidebar-link:hover{
+    background-color: rgb(235, 235, 235);
+}
+.side-img{
+    width: 25px;
+    margin-bottom: 7px;
+    background-color: white;
+    
+}
+.video-preview{
+    margin-top: 25px;
+}
+.ser::placeholder{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serifs;
+}
+.search-button{
+    width: 35px;
+    border-radius: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    position: relative;
+    /* margin-right: 20px; */
+    
+}
+.search-button div{
+    position: absolute;
+    bottom: -40px;
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    right: -5px;
+    opacity: 0;
+    transition: opacity 1s;
+    pointer-events: none;
+}
+.search-button:hover div{
+    opacity: 1;
+}
+
+.record-button{
+    cursor: pointer;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-left: 15px;
+    border-radius: 50px;
+    border: none;
+}
+.search-button, .search-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.record-button div{
+    position: absolute;
+    bottom: -44px;
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    right: -80px;
+    opacity: 0;
+    transition: opacity 1s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.record-button:hover div{
+    opacity: 1;
+}
+.search-icon{
+    width: 35px;
+    border: 1px solid gray;
+    background-color: gray;
+    margin-left: -8px;
+    vertical-align: middle;
+    border-radius: 8px;
+}
+.record-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: lightgray;
+    margin-left: -8px;  
+}
+.img{
+    width: 100%;
+    height: 300px;
+
+}
+.upload-icon, .dot-icon, .notify-icon{
+    position: relative;
+    cursor: pointer;
+}
+.upload-icon div{
+    position: absolute;
+    bottom: -40px;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    pointer-events: none;
+    border-radius: 5px;
+    font-size: 12px;
+    right: -3px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.upload-icon:hover div{
+    opacity: 1;
+}
+
+.dot-icon div{
+    position: absolute;
+    bottom: -42px;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    pointer-events: none;
+    border-radius: 5px;
+    font-size: 12px;
+    right: -3px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.dot-icon:hover div{
+    opacity: 1;
+}
+.img-1{
+    width: 40px;
+    height: 40px;
+    vertical-align: top;
+    border-radius: 50px;
+} 
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+/* 
+@media (max-width: 800px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+
+@media (min-width: 750px) and (max-width: 999px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+}
+
+@media (min-width: 1000px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+} */
+
+.video-info{
+    display: inline-block;
+    width: 200px;
+    
+}
+
+.thumbnail-row{
+    margin-bottom: 9px;
+    position: relative;
+}
+.video-time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 20px;
+    font-weight: bold;
+    right: 25px;
+    border-radius: 3px;
+    padding: 6px;
+}
+.video-title{
+    width: 230px;
+    margin-top: 3px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.video-author, .video-stats{
+    margin-left: 20px;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+.video-author{
+    margin-bottom: 4px;
+}
+
+.notif{
+    position: absolute;
+    bottom: -45px;
+    left: -25px;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s;
+    
+}
+.notify-icon:hover .notif{
+    opacity: 1;
+}
+.video-notify{
+    position: absolute;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    padding: 3px;
+    width: 17px;
+    text-align: center;
+    height: 17px;
+    border-radius: 50%;
+    right: -5px;
+    top: 0px;
+}
+
